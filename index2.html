@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alix Most INF651 Weather App</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sora">
+  <script type="module" src="weatherapp.js"></script>
+  <div id="content">
+  <header>The Weather App</header>
+  <body>
+      <main>
+        <div id="wrapper">
+        <section class="locationContainer">
+        <h1 id="currentcity">City</h1><h2 id="current-date">Date</h2>
+            <h3>Enter your 5 digit zip code for current conditions.</h3>
+        <div id="city-search"><form type="submit" onsubmit="return false" ><input type="text" id="citysearch" placeholder="Zip Code" aria-label="Search by Zip Code"
+        tabindex="1" role="search">
+            <button class="button" id="search-button" type="submit" aria-label="Search Button" tabindex="2">Search</button>
+            <button class="button" id="save-button" type = "button" aria-label="Save Button">Save</button></div></form>
+        </section>
+        
+        <div id ="statusmessage" type="text">Warning</div>
+    
+        <section id="currentbox">
+        <div id="currentweather">Current Weather</div>
+        <div id="currentweathervalue" type="text"></div>
+        <div id="weathericonplace"><img id="weathericon" src="" alt="weather icon"></div>
+        <div id="currentstatus" type="text"></div>
+        </section> 
+    <hr>
+         
+    <section class="weatherContainer">
+        <div id="currenttemps">
+            <div id="hightemp" type="text">High</div><div id="hightempvalue" type="text">2</div>
+            <div id="lowtemp">Low</div><div id="lowtempvalue">3</div> 
+        </div> 
+        
+        <div id="otherstats">
+            <div id="humidity">Humidity</div><div id="humidityvalue"></div>
+            <div id="wind">Wind</div><div id="windvalue">W</div>
+        </div>
+
+    </section>
+    </div>
+    </main>
+ </body>
+</html>

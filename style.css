@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+}
+
+header {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #f7e43b;
+  font-size: 65px;
+  text-shadow: 2px 2px #0b0430;
+  padding-left: 10px;
+}
+
+@media only screen and (min-width: 320px) {
+  header {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (min-width: 786px) {
+  header {
+    font-size: 65px;
+    padding-left: 80px;
+  }
+}
+
+body {
+  background-image: url(background1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media only screen and (min-width: 786px) {
+  body {
+    background-image: url(backg2.jpg);
+  }
+}
+
+html, body {
+  font-size: 16px;
+  font-family: Sora, sans-serif;
+  color: black;
+  width: 100%;
+  min-height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  html, body {
+    margin: auto;
+    font-size: 22px;
+    width: 75%;
+  }
+}
+
+#citysearch {
+  min-height: 35px;
+  min-width: 200px;
+}
+
+#statusmessage {
+  color: red;
+  size: 18px;
+  padding-bottom: 15px;
+}
+
+.button {
+  width: 15%;
+  min-width: 48px;
+  min-height: 48px;
+  background-color: rgba(53, 145, 53, 0.75);
+  color: white;
+  font-family: Sora, sans-serif;
+  border-radius: 5px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+  -webkit-box-shadow: 4px 2px 5px black;
+          box-shadow: 4px 2px 5px black;
+}
+
+#wrapper {
+  background-color: rgba(247, 228, 59, 0.5);
+  max-width: 90%;
+  margin: auto;
+  border-radius: 25px;
+  margin-top: 50px;
+  padding: 10px;
+}
+
+#currentbox {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.weatherContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+#hightempvalue, #humidityvalue {
+  padding-bottom: 25px;
+}
+/*# sourceMappingURL=style.css.map */
